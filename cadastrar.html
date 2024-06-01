@@ -17,13 +17,13 @@
 
     <nav>
         <div class="nav-wrapper blue darken-4">
-            <a href="index.html" class="brand-logo"><i class="large material-icons">bubble_chart</i> Cadastro de Viagens</a>
+            <a href="index.html" class="brand-logo"><i class="large material-icons">bubble_chart</i> Cadastro de
+                Viagens</a>
             <a href="index.html" data-target="mobile-demo" class="sidenav-trigger"><i
                     class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="cadastrar.html">Cadastro</a></li>
                 <li><a href="visualizar.html">Consulta</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
             </ul>
         </div>
     </nav>
@@ -31,34 +31,41 @@
     <ul class="sidenav" id="mobile-demo">
         <li><a href="cadastrar.html">Cadastro</a></li>
         <li><a href="visualizar.html">Consulta</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
     </ul>
 
     <!-- CONTENT -->
     <div class="container">
         <div class="row">
             <div class="col s12">
-                <form class="card">
+                <form class="card z-depth-5">
                     <div class="card-content">
-                        <span class="card-title">Cadastrar Gasto</span>
-                        <div class="row">
+                        <span class="card-title">Cadastrar Viagem</span>
+                        <div class="row" id="form">
                             <div class="input-field col s12">
-                                <input type="date" id="data" name="data" required>
+                                <input id="name" type="text" class="validate">
+                                <label for="name">Nome da Viagem:</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input id="data" type="text" class="datepicker">
                                 <label for="data">Data:</label>
                             </div>
                             <div class="input-field col s12">
-                                <input id="Local" type="text" class="validate">
-                                <label for="Local">Local</label>
+                                <input id="local" type="text" class="validate">
+                                <label for="local">Local de destino:</label>
                             </div>
                             <div class="input-field col s12">
-                                <input id="Quantidade" type="number" class="validate">
-                                <label for="Quantidade">Quantidade de Microplásticos Coletados (kg):
+                                <input id="quantity" type="number" class="validate">
+                                <label for="quantity">Quantidade de Microplásticos Coletados (kg):
                                 </label>
                             </div>
                             <div class="input-field col s12">
-                                <input id="Quantidade" type="number" class="validate">
-                                <label for="Quantidade">Duração da Viagem (horas): </label>
+                                <input id="duration" type="number" class="validate">
+                                <label for="duration">Duração da Viagem (horas): </label>
                             </div>
+                            <!-- <div class="input-field col s12">
+                                <textarea id="observation" class="materialize-textarea"></textarea>
+                                <label for="observation">Observações</label>
+                            </div> -->
                         </div>
                     </div>
 
@@ -73,37 +80,38 @@
         </div>
     </div>
 
-   <!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="page-footer blue">
         <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Global Solution</h5>
-              <p class="grey-text text-lighten-4">Let's Rock The Future!
-              </p>
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Global Solution</h5>
+                    <p class="grey-text text-lighten-4">Let's Rock The Future!
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Acesse :</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="cadastrar.html">Cadastre</a></li>
+                        <li><a class="grey-text text-lighten-3" href="visualizar.html">Consulte</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Acesse :</h5>
-              <ul>
-                <li><a class="grey-text text-lighten-3" href="cadastrar.html">Cadastre</a></li>
-                <li><a class="grey-text text-lighten-3" href="visualizar.html">Consulte</a></li>
-                <li><a class="grey-text text-lighten-3" href="sobre.html">Sobre</a></li>
-              </ul>
-            </div>
-          </div>
         </div>
         <div class="footer-copyright">
-          <div class="container">
-            © 2024 Projeto de Limpeza dos Oceanos
-          <a class="grey-text text-lighten-4 right" href="https://www.fiap.com.br/graduacao/global-solution/">Fiap</a>
-          </div>
+            <div class="container">
+                © 2024 Projeto de Limpeza dos Oceanos
+                <a class="grey-text text-lighten-4 right"
+                    href="https://www.fiap.com.br/graduacao/global-solution/">Fiap</a>
+            </div>
         </div>
-      </footer>
-  
+    </footer>
 
 
-        <script type="text/javascript" src="js/materialize.min.js"></script>
-        <script src="js/start.js"></script>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/start.js"></script>
+    <script src="js/cadastrar.js"></script>
 </body>
 
 </html>
