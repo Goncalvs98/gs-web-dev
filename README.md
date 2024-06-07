@@ -1,5 +1,9 @@
 <p align="center">Um site para GLOBAL SOLUTION - ADVANCED PROG. & MOBILE DEV </p>
 
+Daniel Okudaira Carapeto 93180 
+Gabriel Gonçalves 93069 
+Rodrigo Lima de Carvalho 96247 
+
 Acesse o site: <https://Goncalvs98.github.io/gs-web-dev/>
 
 ## Tecnologias
